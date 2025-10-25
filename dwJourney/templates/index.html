@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Learning Journey</title>
+</head>
+<body style="background: linear-gradient(135deg, #ffd6e0, #ffb6c1); color: #4b2c3b; font-family: 'Poppins', sans-serif;">
+    <h1>My Learning Journey</h1>
+    {% for item in journey %}
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+        <small>Started on: {{ item.date_started }}</small><br>
+        <small>Last Updated: {{ item.date_updated }}</small>
+        <hr>
+    {% endfor %}
+    <a href="{% url 'aboutMe' %}">About Me</a>
+</body>
+</html>

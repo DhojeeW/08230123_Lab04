@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+</head>
+<body style="background: linear-gradient(135deg, #ffd6e0, #ffb6c1); color: #4b2c3b; font-family: 'Poppins', sans-serif;">
+    <h1>About Me</h1>
+    <p><strong>Name:</strong> {{ me.name }}</p>
+    <p><strong>Email:</strong> {{ me.email }}</p>
+    <p>{{ me.bio }}</p>
+    <a href="{% url 'index' %}">Back to Journey</a>
+</body>
+</html>
